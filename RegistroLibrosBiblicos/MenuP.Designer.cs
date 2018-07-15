@@ -31,9 +31,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consutarLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,8 +65,17 @@
             this.registroToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.registroToolStripMenuItem.Text = "Registro";
             // 
+            // registroLibroToolStripMenuItem
+            // 
+            this.registroLibroToolStripMenuItem.Name = "registroLibroToolStripMenuItem";
+            this.registroLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroLibroToolStripMenuItem.Text = "Registro Libro";
+            this.registroLibroToolStripMenuItem.Click += new System.EventHandler(this.registroLibroToolStripMenuItem_Click);
+            // 
             // consultaToolStripMenuItem
             // 
+            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consutarLibroToolStripMenuItem});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.consultaToolStripMenuItem.Text = "Consulta";
@@ -76,12 +86,12 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // registroLibroToolStripMenuItem
+            // consutarLibroToolStripMenuItem
             // 
-            this.registroLibroToolStripMenuItem.Name = "registroLibroToolStripMenuItem";
-            this.registroLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registroLibroToolStripMenuItem.Text = "Registro Libro";
-            this.registroLibroToolStripMenuItem.Click += new System.EventHandler(this.registroLibroToolStripMenuItem_Click);
+            this.consutarLibroToolStripMenuItem.Name = "consutarLibroToolStripMenuItem";
+            this.consutarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consutarLibroToolStripMenuItem.Text = "Consutar Libro";
+            this.consutarLibroToolStripMenuItem.Click += new System.EventHandler(this.consutarLibroToolStripMenuItem_Click);
             // 
             // MenuP
             // 
@@ -93,6 +103,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuP";
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.MenuP_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -108,6 +119,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroLibroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consutarLibroToolStripMenuItem;
     }
 }
 
